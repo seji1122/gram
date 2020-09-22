@@ -1,4 +1,4 @@
-<section class="hero is-success">
+<section class="hero is-warning">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -15,6 +15,8 @@
         <div class="columns is-centered">
           <div class="column is-4">
             <figure class="image is-128x128"  style="margin-left: auto; margin-right: auto;">
+              <%= attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "profile_image is-rounded" %>
+
             </figure>
           </div>
           <div class="column is-8">
@@ -28,7 +30,7 @@
                   <%= @user.email %>
                 </td>
                 <td>
-                    <%= link_to "編集", edit_user_path(@user), class: "button is-primary" %>
+                    <%= link_to "編集", edit_user_path(@user), class: "button is-warning" %>
                 </td>
                 <% end %>
               </tr>
@@ -47,12 +49,46 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      <% @user.posts.each do |post| %>
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <%= link_to post_path(post) do %>
+                  <%= attachment_image_tag post, :image, fallback: "no-image.png" %>
+                <% end %>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <%= link_to post_path(post), class: "panel-block" do %>
+                    <span class="panel-icon">
+                      <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    投稿を見る
+                  <% end %>
+                  <% if @user.id == current_user.id %>
+                    <%= link_to edit_post_path(post), class: "panel-block" do %>
+                      <span class="panel-icon">
+                        <i class="fas fa-edit"></i>
+                      </span>
+                      投稿を編集する
+                    <% end %>
+                  <% end %>
+                </div>
+              </div>
+              <div class="content">
+                <time><%= post.updated_at.strftime("%Y-%m-%d %H:%M") %></time>更新
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
 
-
-<%= attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "profile_image is-rounded" %>
-
-<%= @user.username %>
-
-<%= @user.email%>
-
-<%= @user.profile%>
