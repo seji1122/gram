@@ -61,3 +61,5 @@ gem "bulma-rails"
 group :production do
   gem 'rails_12factor'
 end
+
+
