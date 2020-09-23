@@ -1,5 +1,5 @@
 # AUtalk (情報アプリケーション）
-
+![AUtalk](https://user-images.githubusercontent.com/68591263/93959494-c24bf880-fd93-11ea-8c0f-9b8b1e946ecb.png)
 ## 概要
 ### ユーザー管理機能実装（新規登録、ログイン、ログアウト、ユーザー情報編集）
 ### ユーザー一覧表示
