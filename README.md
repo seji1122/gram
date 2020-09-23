@@ -1,24 +1,27 @@
-# README
+# AUtalk (情報アプリケーション）
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+### ユーザー管理機能実装（新規登録、ログイン、ログアウト、ユーザー情報編集）
+### ユーザー一覧表示
+### 写真付き記事投稿
+### 投稿記事一覧表示
 
-Things you may want to cover:
+## 制作背景
 
-* Ruby version
+### これから海外に旅たつ人に正確な情報を知ってもらいたい！
 
-* System dependencies
+### ！！海外留学、旅行に行く前の気持ち！！
+### ・ウェブサイトにも情報はあるが現地の人と繋がっておきたい。
+### ・実際に今の現状はどうなのか。
+### ・現地では仕事、家の探し方はどうするのか。
 
-* Configuration
+### ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
-* Database creation
+### ！！実際はウェブサイトなどの情報だけに頼るとズレがある！！
+### ・エージェントを使わずに住居なども見つける事は可能
+### ・お仕事もネットで応募は可能
+### ・現地の人と繋がっている事ができたら、的確なアドバイスをもらえ不安な出だしがスムーズになる
 
-* Database initialization
+### これから海外に旅たつ人の不安の解消、現地に行った時の情報のずれなどを解消、目的とした情報アプリケーションです。
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![AUtalk](https://gyazo.com/228fa3e7a407ec24d7c5fb91b2d0f426)
