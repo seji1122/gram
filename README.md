@@ -1,4 +1,4 @@
-# 
+# AUtalk
 ![AUtalk](https://user-images.githubusercontent.com/68591263/93962723-69319400-fd96-11ea-9e4e-bc3a66b84e27.png)
 ## 概要
 ### ユーザー管理機能実装（新規登録、ログイン、ログアウト、ユーザー情報編集）
